@@ -3,15 +3,15 @@
 
     <div id="textHeader">
       <span id="text1"> Formação </span>
-      <img id="more_vert" src="../assets/Icons - Social - more_vert.svg">
+      <img @click="clickme" id="more_vert" src="../assets/Icons - Social - more_vert.svg">
     </div>
 
     <div id="midlemenu">
       <div id="circle1">
         <img @click="clickme" id="magnify" src="../assets/magnify.svg">
       </div>
-      <div id="circle1">
-        <img @click="clickme" id="filter" src="../assets/filter_list-24px.svg">
+      <div @click="clickme" id="circle1">
+        <img id="filter" src="../assets/filter_list-24px.svg">
       </div>
     </div>
 
@@ -231,6 +231,7 @@ export default {
 }
 
 #formacoes{
+  margin-left: 100px;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -265,13 +266,16 @@ export default {
 }
 
 #container {
-   position:absolute;
-    top: 64px;
-    right: 0;
-    left: 100px;
+  position:absolute;
+  top: 64px;
+  right: 0;
+  left: 0px;
+  width: 100%;
+  z-index:1
 }
 
 #textHeader{
+  width: 100%;
   height: 89px;
   position: relative;
   background: #FAFAFA 0% 0% no-repeat padding-box;
@@ -281,18 +285,18 @@ export default {
 #text1{
   position:absolute;
   top: 32px;
-  left: 32px;
+  left: 132px;
   width: 107px;
   height: 29px;
 
   text-align: left;
-
+  
   font-family: proxima-soft, sans-serif; /* Semibold Proxima Nova Soft */
   font-style:normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 27px;
-
+  
   letter-spacing: 0px;
   color: #424242;
   opacity: 1;
@@ -330,8 +334,8 @@ export default {
   background: #328EBA 0% 0% no-repeat padding-box;
   border-radius: 4px;
   opacity: 1;
-  padding-left: 16px;
-  padding-top: 4px;
+  text-align: center;
+  vertical-align: center;
 }
 
 #vermentorados{
@@ -340,10 +344,12 @@ export default {
   font-style:normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 36px;
   letter-spacing: 0px;
   color: #FFFFFF;
   opacity: 1;
+  display: inline-block;
+  vertical-align:center;
 }
 
 #midlemenu{

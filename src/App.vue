@@ -84,7 +84,6 @@ export default {
   height: 12px;
   background: #D84E3B 0% 0% no-repeat padding-box;
   opacity:1;
-
   border-radius: 4px;
   justify-content: center;
   align-content: center;
@@ -101,26 +100,23 @@ export default {
   text-align: center;
   letter-spacing: 0px;
   color: #FFFFFF;
-
 }
 
 #fill {
-top: 64px;
-left: 0px;
-width: 100px;
-height: 800px;
-
-background: #F5F5F5 0% 0% no-repeat padding-box;
-opacity: 1;
+  top: 64px;
+  left: 0px;
+  width: 100px;
+  height: 100vh;
+  background: #F5F5F5 0% 0% no-repeat padding-box;
+  opacity: 1;
+  z-index:2
 }
-
 
 #container {
   top: 0px;
   left: 0px;
-  width:unset;
+  width: 100%;
   height: 800px;
-
   background: #FFFFFF 0% 0% no-repeat padding-box;
   opacity: 1;
   display: flex;
@@ -133,7 +129,6 @@ opacity: 1;
   left: 0px;
   width: 100px;
   height: 64px;
-
   opacity: 1;
 }
 
@@ -142,7 +137,6 @@ opacity: 1;
   left: 0px;
   width:unset;
   height: 64px;
-
   background: #2B8FBA 0% 0% no-repeat padding-box;
   opacity: 1;
   display: flex;
