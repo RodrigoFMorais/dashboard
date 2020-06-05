@@ -22,8 +22,10 @@
 
   methods : {
     clickMethod() {
-      console.log("Acionado! no " + this.texto )
       this.$router.push('/' + this.linkroute)
+    },
+    clickme : () => {
+        alert("Função não programada!");
     }
   },
 

@@ -8,10 +8,10 @@
 
     <div id="midlemenu">
       <div id="circle1">
-        <img id="magnify" src="../assets/magnify.svg">
+        <img @click="clickme" id="magnify" src="../assets/magnify.svg">
       </div>
       <div id="circle1">
-        <img id="filter" src="../assets/filter_list-24px.svg">
+        <img @click="clickme" id="filter" src="../assets/filter_list-24px.svg">
       </div>
     </div>
 
@@ -32,7 +32,7 @@
           <img id="formacao_atividade_logo" src="../assets/school.png">
           <span id="formacao_atividade_texto1"> 102 atividades </span>
           <span id="formacao_atividade_texto2" style="margin-left: 4px"> aguardando mentoria </span>
-          <img id="formacao_atividade_logo2" src="../assets/arrow_right.png">
+          <img @click="clickme" id="formacao_atividade_logo2" src="../assets/arrow_right.png">
         </div>
 
         <div id="line"/>
@@ -41,7 +41,7 @@
           <img id="formacao_atividade_logo" src="../assets/videocam.png">
           <span id="formacao_atividade_texto1"> 92 evidências </span>
           <span id="formacao_atividade_texto2"> aguardando mentoria </span>
-          <img id="formacao_atividade_logo2" src="../assets/arrow_right.png">
+          <img @click="clickme" id="formacao_atividade_logo2" src="../assets/arrow_right.png">
         </div>
 
         <div id="line"/>
@@ -50,17 +50,17 @@
           <img id="formacao_atividade_logo" src="../assets/record_voice_over.png">
           <span id="formacao_atividade_texto1"> 4 feedback </span>
           <span id="formacao_atividade_texto2" style="margin-left: -10px"> aguardando mentoria </span>
-          <img id="formacao_atividade_logo2" src="../assets/arrow_right.png">
+          <img @click="clickme" id="formacao_atividade_logo2" src="../assets/arrow_right.png">
         </div>
         
         <div id="line1"/>
 
         <div id="botoes">
           <div id="botoes_bk">
-              <span id="previsualizar">PRÉ-VISUALIZAR</span>
+              <span @click="clickme" id="previsualizar">PRÉ-VISUALIZAR</span>
 
             <div id="botao_2">
-              <span id="vermentorados">VER MENTORADOS</span>
+              <span @click="clickme" id="vermentorados">VER MENTORADOS</span>
             </div>
           </div>
         </div>
@@ -83,7 +83,7 @@
           <img id="formacao_atividade_logo" src="../assets/school.png">
           <span id="formacao_atividade_texto1"> 102 atividades </span>
           <span id="formacao_atividade_texto2" style="margin-left: 4px"> aguardando mentoria </span>
-          <img id="formacao_atividade_logo2" src="../assets/arrow_right.png">
+          <img @click="clickme" id="formacao_atividade_logo2" src="../assets/arrow_right.png">
         </div>
 
         <div id="line"/>
@@ -92,7 +92,7 @@
           <img id="formacao_atividade_logo" src="../assets/videocam.png">
           <span id="formacao_atividade_texto1"> 92 evidências </span>
           <span id="formacao_atividade_texto2"> aguardando mentoria </span>
-          <img id="formacao_atividade_logo2" src="../assets/arrow_right.png">
+          <img @click="clickme" id="formacao_atividade_logo2" src="../assets/arrow_right.png">
         </div>
 
         <div id="line"/>
@@ -101,17 +101,17 @@
           <img id="formacao_atividade_logo" src="../assets/record_voice_over.png">
           <span id="formacao_atividade_texto1"> 4 feedback </span>
           <span id="formacao_atividade_texto2" style="margin-left: -10px"> aguardando mentoria </span>
-          <img id="formacao_atividade_logo2" src="../assets/arrow_right.png">
+          <img @click="clickme" id="formacao_atividade_logo2" src="../assets/arrow_right.png">
         </div>
         
         <div id="line1"/>
 
         <div id="botoes">
           <div id="botoes_bk">
-              <span id="previsualizar">PRÉ-VISUALIZAR</span>
+              <span @click="clickme" id="previsualizar">PRÉ-VISUALIZAR</span>
 
             <div id="botao_2">
-              <span id="vermentorados">VER MENTORADOS</span>
+              <span @click="clickme" id="vermentorados">VER MENTORADOS</span>
             </div>
           </div>
         </div>
@@ -126,7 +126,11 @@
 
 <script>
 export default {
-  
+    methods : {
+      clickme : () => {
+          alert("Função não programada!");
+      }
+  },
 }
 </script>>
 
